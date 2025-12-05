@@ -14,3 +14,12 @@ if grad > 20:
 return "Woche war warm!"
 else:
 return "Woche war kuehl"
+
+if __name__ == "__main__":
+  grad_temp = durchschnitt(temperature)
+  max_temp, min_temp = tempspannweite(temperature)
+
+print(f"Durchschnittstemparatur: {grad_temp:.2f} °c")
+print(f"Höchste Temperatur : {max_temp}")
+print(f"Niedrigste Temperatur: {min_temp}")
+print(f"gradtemp(grad_temp)")
