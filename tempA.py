@@ -23,3 +23,4 @@ print(f"Durchschnittstemparatur: {grad_temp:.2f} °c")
 print(f"Höchste Temperatur : {max_temp}")
 print(f"Niedrigste Temperatur: {min_temp}")
 print(f"gradtemp(grad_temp)")
+
