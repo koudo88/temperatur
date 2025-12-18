@@ -1,29 +1,25 @@
 temperature = [14,18,21,20,19,16,15]
 
-#durchschnitt berechnen
-def durchschnitt(temperature):
-  print(sum(temperature)/len(temperature))
+def durchschnitt(werte):
+    return sum(werte) / len(werte)
 
-#hoechste und niedrige temperature 
-def maxtempspannweite(temperature):
-  print(max(temperature))
+def max_temperatur(werte):
+    return max(werte)
 
-def mintempspannweite(temperature):
-    print( min(temperature))
 
-#pruefen,ob die Durchschnittstemperatur warm oder kalt ist
-def grad_temp(temperature):
-  if temperature > 20:
-    print("Woche war warm!")
+def min_temperatur(werte):
+  return min(werte)
 
-print("Woche war kuehl")
+def wochenfazit(avg):
+    if avg > 20:
+        return "Woche war warm!"
+    return "Woche war eher kühl"
 
-if __name__ == "__main__":
-  grad_temp = durchschnitt(temperature)
-  max_temp = maxtempspannweite(temperature)
-  min_temp = mintempspannweite(temperature)
+grad_temp = durchschnitt(temperature)
+max_temp = max_temperatur(temperature)
+min_temp = min_temperatur(temperature)
 
-print(f"Durchschnittstemparatur: {grad_temp} °c")
+print(f"Durchschnittstemparatur: {grad_temp:.2f} °c")
 print(f"Höchste Temperatur : {max_temp}")
 print(f"Niedrigste Temperatur: {min_temp}")
 print(f"gradtemp(grad_temp)")
