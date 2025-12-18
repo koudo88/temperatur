@@ -18,9 +18,10 @@ def wochenfazit(avg):
 grad_temp = durchschnitt(temperature)
 max_temp = max_temperatur(temperature)
 min_temp = min_temperatur(temperature)
+wochen = wochenfazit(grad_temp)
 
 print(f"Durchschnittstemparatur: {grad_temp:.2f} °c")
 print(f"Höchste Temperatur : {max_temp}")
 print(f"Niedrigste Temperatur: {min_temp}")
-print(f"gradtemp(grad_temp)")
+print(f"{wochen}")
 
